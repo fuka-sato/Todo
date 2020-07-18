@@ -1,24 +1,29 @@
 # README
+# medical-is DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|password|string|null: false|
+|email|string|null: false|
+### Association
+- has_many :posts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|title|text|null: false|
+|url|text|null: false|
 
-Things you may want to cover:
+### Association
+- belongs_to :user
 
-* Ruby version
 
-* System dependencies
+## Categoriesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|language|string|null: false|
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
