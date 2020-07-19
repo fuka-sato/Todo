@@ -14,19 +14,20 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|title|string|null: false|
-|text|text|null: false|
-|url|text|
+|title|text|null: false|
+|url|text|null: false|
 
 ### Association
 - belongs_to :user
 - has_many :categories_posts
 - has_many :categories, through: :categories_posts
 
+
+
 ## Categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|language|string|null: false|
+|name|string|null: false|
 
 ### Association
 - belongs_to :user

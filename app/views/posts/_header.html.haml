@@ -1,0 +1,15 @@
+.header
+  .header__in
+    %ul.header__inr__left
+      %li.header__in__left__title
+        = link_to "Study Memo",root_path
+        .header__in__left__icon
+          = icon('fa', 'graduation-cap', class: 'icon')
+    -# この下はあとで条件分岐する！
+    %ul.header__in__right
+      %li.header__in__right__post
+        = link_to "New post",new_post_path
+      %li.header__in__right__category
+        = link_to "Category","#"
+      %li.header__in__right__logout
+        = link_to "Logout","#"
