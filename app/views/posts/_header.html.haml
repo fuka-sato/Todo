@@ -12,4 +12,4 @@
       %li.header__in__right__category
         = link_to "Category","#"
       %li.header__in__right__logout
-        = link_to "Logout","#"
+        = link_to "Logout", destroy_user_session_path, method: :delete
