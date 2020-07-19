@@ -1,0 +1,54 @@
+.sign_up {
+  &__header {
+    margin-bottom: 50px;
+  }
+  &__main {
+    width: 300px;
+    padding: 30px 0 0;
+    margin: 0 auto;
+    &__in {
+      margin: 0 auto;
+      p {
+        color: #B8860B;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .icon {
+        font-size: 30px;
+      }
+      &__form {
+        label {
+          color: #AAAAAA;
+        }
+        span {
+          margin: 0 0 0 8px;
+          padding: 2px 4px;
+          border-radius: 2px;
+          color: white;
+          font-size: 12px;
+          background-color:#BDB76B;
+        }
+        .input {
+          width: 345px;
+          height: 50px;
+          margin-bottom: 15px;
+          border: 1px solid #AAAAAA;
+        }
+        .btn {
+          width: 345px;
+          height: 50px;
+          margin-top: 8px;
+          border: 1px solid #AAAAAA;
+          background-color: #6B8E23;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.sign_up__main__in__form__input__password__info {
+  color: #AAAAAA;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
