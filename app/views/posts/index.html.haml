@@ -1,3 +1,23 @@
 .wrapper
-  .header
-    = render "header"
+  = render "header"
+  .post
+    .post__in
+      %h1
+        ユーザーネームの投稿一覧
+      %table.post__in__list
+        %tr
+          %th.post__in__list__title
+            タイトル
+          %th.post__in__list__day
+            投稿日時
+          %th.post__in__list__menu
+            メニュー
+        %tr
+          %td.post__in__list__name
+            『Ruby』これやったよ
+          %td.post__in__list__day-time
+            2020/07/20
+          %td.pos__int__list__edit
+            編集ボタン
+          %td.post__in__list__delete
+            削除ボタン
