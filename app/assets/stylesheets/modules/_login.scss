@@ -9,19 +9,9 @@
       margin: 0 auto;
       text-align: center;
       a {
-        display: block;
-        margin-top: 8px;
-        margin-left: auto;
-        margin-right: auto;
+        @include btn();
         border: 1px solid #6B8E23	;
         background: #6B8E23	;
-        color: #fff;
-        line-height: 40px;
-        text-align: center;
-        width: 340px;
-        padding: 5px;
-        border-radius: 4px;
-        text-decoration: none;
       }
 
       p {
@@ -43,19 +33,10 @@
       margin: 0 auto;
       text-align: center;
       a {
-        display: block;
-        margin-top: 8px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #000055	;
-        background: #000055	;
-        color: #fff;
-        line-height: 40px;
-        text-align: center;
-        width: 345px;
-        padding: 5px;
-        border-radius: 4px;
-        text-decoration: none;
+        @include btn();
+        border: 1px solid #006699	;
+        background: #006699	;
+        width: 330px;
       }
       p {
         color: #B8860B;
@@ -69,23 +50,13 @@
         width: 345px;
         height: 50px;
         margin-top: 8px;
-        border: 1px solid #000055;
+        border: 1px solid #006699;
       }
       .btn {
-        display: block;
-        margin-top: 8px;
-        margin-left: auto;
-        margin-right: auto;
-        border: 1px solid #000055	;
-        background: #000055	;
-        color: #fff;
-        line-height: 40px;
-        text-align: center;
-        width: 352px;
-        padding: 5px;
-        border-radius: 4px;
-        text-decoration: none;
-        margin-bottom: 20px;
+        @include btn();
+        border: 1px solid #006699	;
+        background: #006699	;
+        
       }
     }
   }
