@@ -18,6 +18,10 @@
           padding-bottom: 15px;
           font-weight: bold;
           font-size: 20px;
+
+        }
+        .post__in__list__title {
+          width: 60%;
         }
         .post__in__list__menu {
           text-align: right;
@@ -28,14 +32,15 @@
         border-color:#BBBBBB	;
         border-width:2px;
         td {
-          padding-bottom: 5px;
+          padding-bottom: 10px 5px;
         }
         .post__in__list__edit {
-          display: flex;
-          text-align: right
+          text-align: right;
         }
         .icon {
-          text-align: right
+          text-align: right;
+          text-decoration: none;
+          color: #777777;
         }
       }
     }

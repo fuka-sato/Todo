@@ -20,7 +20,16 @@
           %td.post__in__list__edit
             = link_to "#" do
               = icon('fa', 'edit', class: 'icon')
-            .post__in__list__delete
+            = link_to "#" do
+              = icon('fa', 'trash-alt', class: 'icon')
+          %tr.downer
+            %td.post__in__list__name
+              『Ruby』これやったよ
+            %td.post__in__list__day-time
+              2020/07/20
+            %td.post__in__list__edit
+              = link_to "#" do
+                = icon('fa', 'edit', class: 'icon')
               = link_to "#" do
                 = icon('fa', 'trash-alt', class: 'icon')
             
