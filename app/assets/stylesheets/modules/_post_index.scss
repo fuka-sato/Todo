@@ -4,5 +4,40 @@
     width: 100%;
     margin: 0 auto;
     padding: 15px 0 0;
+    h1 {
+      font-size: 25px;
+      font-weight: bold;
+      color: #B8860B;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 80%;
+      color: #777777;
+      .upper {
+        th {
+          padding-bottom: 15px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .post__in__list__menu {
+          text-align: right;
+        }
+      }
+      .downer {
+        border-bottom:double;/*二重線を引く*/
+        border-color:#BBBBBB	;
+        border-width:2px;
+        td {
+          padding-bottom: 5px;
+        }
+        .post__in__list__edit {
+          display: flex;
+          text-align: right
+        }
+        .icon {
+          text-align: right
+        }
+      }
+    }
   }
 }

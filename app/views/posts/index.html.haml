@@ -5,19 +5,22 @@
       %h1
         ユーザーネームの投稿一覧
       %table.post__in__list
-        %tr
+        %tr.upper
           %th.post__in__list__title
-            タイトル
+            title
           %th.post__in__list__day
-            投稿日時
+            date
           %th.post__in__list__menu
-            メニュー
-        %tr
+            menu
+        %tr.downer
           %td.post__in__list__name
             『Ruby』これやったよ
           %td.post__in__list__day-time
             2020/07/20
-          %td.pos__int__list__edit
-            編集ボタン
-          %td.post__in__list__delete
-            削除ボタン
+          %td.post__in__list__edit
+            = link_to "#" do
+              = icon('fa', 'edit', class: 'icon')
+            .post__in__list__delete
+              = link_to "#" do
+                = icon('fa', 'trash-alt', class: 'icon')
+            
