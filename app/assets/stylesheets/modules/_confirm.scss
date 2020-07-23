@@ -1,0 +1,40 @@
+.main {
+  &__post {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #777777;
+    &__in {
+      width: 100%;
+      &__title {
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px 0px;
+        .after {
+          content: "";
+          border-bottom:double;
+          border-color:#BBBBBB	;
+          border-width:2px;
+        }
+      }
+      span {
+        margin: 0 0 0 8px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        color: white;
+        font-size: 15px;
+        background-color:#FFA500;
+      }
+      &__text {
+        padding: 10px 0px;
+      }
+      &__url {
+        padding: 10px 0px;
+        font-size: 25px;
+        &__box {
+          font-size: 15px;
+        }
+      }
+
+    }
+  }
+}
