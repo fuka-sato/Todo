@@ -14,8 +14,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|title|text|null: false|
-|url|text|null: false|
+|title|string|null: false|
+|body|text|null: false|
+|url|text|
 
 ### Association
 - belongs_to :user
