@@ -20,7 +20,8 @@
             %td.post__in__list__name
               = link_to post.title, "#"
             %td.post__in__list__category
-              = render 'posts/tag', tag_list: post.tag_list
+              = render 'posts/tag', tags: post.tags
+              -# = post.tags.pluck(:name).join(",").html_safe
             %td.post__in__list__day-time
               = post.created_at.to_s(:datetime_jp)
             %td.post__in__list__edit
