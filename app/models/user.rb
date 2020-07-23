@@ -21,4 +21,6 @@ class User < ApplicationRecord
             presence: true,                     
             length: { minimum: 7 },            
             format: { with: /\A[a-z0-9]+\z/i } 
+
+  has_many :posts
 end
