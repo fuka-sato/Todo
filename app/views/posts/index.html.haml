@@ -20,7 +20,7 @@
             %td.post__in__list__name
               = link_to post.title, "#"
             %td.post__in__list__category
-              = link_to post.tag_list, "#"
+              = render 'posts/tag', tag_list: post.tag_list
             %td.post__in__list__day-time
               = post.created_at
             %td.post__in__list__edit
