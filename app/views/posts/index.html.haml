@@ -1,3 +1,41 @@
 .wrapper
-  .header
-    = render "header"
+  = render "header"
+  .post
+    .post__in
+      %h1
+        ユーザーネームの投稿一覧
+      %table.post__in__list
+        %tr.upper
+          %th.post__in__list__title
+            title
+          %th.post__in__list__category
+            category
+          %th.post__in__list__day
+            date
+          %th.post__in__list__menu
+            menu
+        %tr.downer
+          %td.post__in__list__name
+            『Ruby』これやったよ
+          %td.post__in__list__category
+            Ruby
+          %td.post__in__list__day-time
+            2020/07/20
+          %td.post__in__list__edit
+            = link_to "#" do
+              = icon('fa', 'edit', class: 'icon')
+            = link_to "#" do
+              = icon('fa', 'trash-alt', class: 'icon')
+          %tr.downer
+            %td.post__in__list__name
+              『Ruby』これやったよ
+            %td.post__in__list__category
+              Ruby
+            %td.post__in__list__day-time
+              2020/07/20
+            %td.post__in__list__edit
+              = link_to "#" do
+                = icon('fa', 'edit', class: 'icon')
+              = link_to "#" do
+                = icon('fa', 'trash-alt', class: 'icon')
+            

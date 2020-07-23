@@ -3,6 +3,11 @@ Rails.application.routes.draw do
     devise_scope :user do
       root to: "devise/sessions#new"
     end
-  resources :posts
+  resources :posts do
+    collection do
+      get :confirm
+      # あとでshowに変更する
+    end
+  end
   resources :users
 end

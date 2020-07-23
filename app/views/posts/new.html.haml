@@ -1,24 +1,23 @@
 .wrapper
-  .header
-    = render "header"
-    .new__post
-      .new__post__title
-        %label タイトル
-        %span 必須
-        %br
-        %input.new__post__title__box
-      .new__post__body
-        %label 本文
-        %span 必須
-        %br
-        %input.new__post__body__box
-      .new__post__url
-        %label 参考にしたURL
-        %input.new__post__url__box
-      .new__post__category
-        %label 学んだ言語
-        %span 必須
-        %br
-        %input.new__post__category__box
-      .new__post__submit
-        %input.new__post__submit__btn{ :type => "submit" }
+  = render "header"
+  .new__post
+    .new__post__title
+      %label タイトル
+      %span 必須
+      %br
+      %input.new__post__title__box
+    .new__post__body
+      %label 本文
+      %span 必須
+      %br
+      %input.new__post__body__box
+    .new__post__url
+      %label 参考にしたURL
+      %input.new__post__url__box
+    .new__post__category
+      %label 学んだ言語
+      %span 必須
+      %br
+      %input.new__post__category__box
+    .new__post__submit
+      %input.new__post__submit__btn{ :type => "submit" }
