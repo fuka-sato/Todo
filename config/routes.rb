@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :posts do
     collection do
       get :confirm
+      # あとでshowに変更する
     end
   end
   resources :users
