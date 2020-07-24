@@ -18,11 +18,14 @@
           padding-bottom: 15px;
           font-weight: bold;
           font-size: 20px;
-
         }
         .post__in__list__title {
-          width: 50%;
+          width: 35%;
         }
+        .post__in__list__category {
+          width: 35%;
+        }
+        
         .post__in__list__menu {
           text-align: right;
         }
@@ -31,8 +34,13 @@
         border-bottom:double;
         border-color:#BBBBBB	;
         border-width:2px;
+        
         td {
           padding-top: 15px
+        }
+        a {
+          text-decoration: none;
+          color: #111111;
         }
         .post__in__list__edit {
           text-align: right;
@@ -41,6 +49,14 @@
           text-align: right;
           text-decoration: none;
           color: #777777;
+        }
+        .tag {
+          margin: 0 0 0 8px;
+          padding: 2px 4px;
+          border-radius: 2px;
+          color: white;
+          font-size: 11px;
+          background-color:#CC0000;
         }
       }
     }
