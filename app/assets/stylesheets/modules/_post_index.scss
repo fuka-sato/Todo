@@ -42,6 +42,10 @@
           text-decoration: none;
           color: #111111;
           font-weight: bold;
+          text-decoration:none;
+        }
+        a:hover {
+          text-decoration:underline;
         }
         .post__in__list__edit {
           text-align: right;
@@ -92,7 +96,9 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        
+      }
+      a:hover {
+        text-decoration:underline;
       }
     }
     .first {
@@ -101,7 +107,9 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        
+      }
+      a:hover {
+        text-decoration:underline;
       }
     }
     .prev {
@@ -110,7 +118,9 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        
+      }
+      a:hover {
+        text-decoration:underline;
       }
     }
   }
