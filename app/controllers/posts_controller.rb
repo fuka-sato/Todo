@@ -20,7 +20,15 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  def confirm
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to posts_path,notice: '削除できました'
+    else
+      flash.now[:notice] = '削除できませんでした'
+      render :index
+      return
+    end
   end
 
   private

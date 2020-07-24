@@ -41,6 +41,7 @@
         a {
           text-decoration: none;
           color: #111111;
+          font-weight: bold;
         }
         .post__in__list__edit {
           text-align: right;
@@ -49,6 +50,8 @@
           text-align: right;
           text-decoration: none;
           color: #777777;
+          margin-right: 10px;
+          font-size: 20px;
         }
         .tag {
           margin: 0 0 0 8px;
@@ -65,22 +68,22 @@
       color: #111111;
       font-size: 15px;
       margin: 10px;
-      font-weight: bold;
+      
       a {
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        font-weight: bold;
+        
       }
     }
     .next {
       background-color: white;
-      font-weight: bold;
+      
       a {
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        font-weight: bold;
+        
       }
     }
     .last {
@@ -89,7 +92,7 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        font-weight: bold;
+        
       }
     }
     .first {
@@ -98,7 +101,7 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        font-weight: bold;
+        
       }
     }
     .prev {
@@ -107,7 +110,7 @@
         text-decoration: none;
         color: #111111;
         font-size: 15px;
-        font-weight: bold;
+        
       }
     }
   }

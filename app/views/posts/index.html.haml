@@ -27,7 +27,7 @@
             %td.post__in__list__edit
               = link_to "#" do
                 = icon('fa', 'edit', class: 'icon')
-              = link_to "#" do
+              = link_to post_path(post.id),method: :delete, data: {confirm: "削除しますか？"} do
                 = icon('fa', 'trash-alt', class: 'icon')
       .page
         = paginate(@posts)
