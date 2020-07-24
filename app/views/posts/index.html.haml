@@ -18,7 +18,7 @@
         - @posts.each do |post|
           %tr.downer
             %td.post__in__list__name
-              = link_to post.title, "#"
+              = link_to post.title, post_path(post.id)
             %td.post__in__list__category
               = render 'posts/tag', tags: post.tags
               -# = post.tags.pluck(:name).join(",").html_safe

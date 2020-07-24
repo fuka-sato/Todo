@@ -1,0 +1,16 @@
+.wrapper
+  = render "header"
+  .main
+    .main__post
+      .main__post__in
+        %h1.main__post__in__title
+          = @post.title
+          .after
+        .main__post__in__tag
+          = render 'posts/tag', tags: @post.tags
+        .main__post__in__text
+          = @post.body
+        .main__post__in__url
+          参考URL一覧
+          .main__post__in__url__box
+            = @post.url
