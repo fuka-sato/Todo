@@ -29,4 +29,5 @@
                 = icon('fa', 'edit', class: 'icon')
               = link_to "#" do
                 = icon('fa', 'trash-alt', class: 'icon')
-            
+      .page
+        = paginate(@posts)

@@ -60,5 +60,55 @@
         }
       }
     }
+    .page {
+      background-color: white;
+      color: #111111;
+      font-size: 15px;
+      margin: 10px;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .next {
+      background-color: white;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .last {
+      background-color: white;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .first {
+      background-color: white;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .prev {
+      background-color: white;
+      a {
+        text-decoration: none;
+        color: #111111;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
   }
 }
