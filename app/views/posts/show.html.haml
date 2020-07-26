@@ -9,8 +9,8 @@
         .main__post__in__tag
           = render 'posts/tag', tags: @post.tags
         .main__post__in__text
-          = @post.body
+          = simple_format(@post.body)
         .main__post__in__url
           参考URL一覧
           .main__post__in__url__box
-            = @post.url
+            = simple_format(@post.url)

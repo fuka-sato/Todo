@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :set_post,only: [:show, :destroy,:edit, :update]
+
   def index
     @posts = Post.all.includes(:tags).order("updated_at DESC").page(params[:page]).per(10)
   end
@@ -17,11 +19,9 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
   end
 
   def update
-    @post = Post.find(params[:id])
     if @post.update(post_params)
       redirect_to posts_path,notice: '編集が完了しました'
     else
@@ -32,11 +32,9 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
   end
 
   def destroy
-    @post = Post.find(params[:id])
     if @post.destroy
       redirect_to posts_path,notice: '削除できました'
     else
@@ -44,6 +42,10 @@ class PostsController < ApplicationController
       render :index
       return
     end
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 
   private
