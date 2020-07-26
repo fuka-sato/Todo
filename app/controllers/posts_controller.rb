@@ -20,6 +20,17 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to posts_path,notice: '編集が完了しました'
+    else
+      flash.now[:notice] = '編集できませんでした'
+      render :edit
+      return
+    end
+  end
+
   def show
     @post = Post.find(params[:id])
   end

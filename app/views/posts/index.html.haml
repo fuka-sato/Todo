@@ -25,7 +25,7 @@
             %td.post__in__list__day-time
               = post.created_at.to_s(:datetime_jp)
             %td.post__in__list__edit
-              = link_to "#" do
+              = link_to edit_post_path(post.id) do
                 = icon('fa', 'edit', class: 'icon')
               = link_to post_path(post.id),method: :delete, data: {confirm: "削除しますか？"} do
                 = icon('fa', 'trash-alt', class: 'icon')
