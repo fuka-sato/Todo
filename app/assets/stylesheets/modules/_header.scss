@@ -1,3 +1,7 @@
+.active{
+  display: block;
+}
+
 .header {
   height: 60px;
   background-color: #FFF8DC;
@@ -37,16 +41,18 @@
       }
       &__category {
         margin-left: 20px;
-        li {
-          display: flex;
-          flex-direction: column;
+        &__list {
           display: none;
+          &__menu {
+            display: flex;
+            flex-direction: column;
+          
         }
       }
-      &__logout {
+    }
+      &__post {
         margin-left: 20px;
       }
     }
   }
 }
-

@@ -7,13 +7,14 @@
           = icon('fa', 'graduation-cap', class: 'icon')
     -# この下はあとで条件分岐する！
     %ul.header__in__right
+      %li.header__in__right__logout
+        = link_to "Logout", destroy_user_session_path, method: :delete
       %li.header__in__right__post
         = link_to "New post",new_post_path
       %li.header__in__right__category
         = link_to "Category","#"
         %ul.header__in__right__category__list
-          - Post.all_tags.each do |tag| 
-            %li.header__in__right__category__list__menu
-              = link_to "#{tag.name}(#{tag.taggings_count})",new_post_path
-      %li.header__in__right__logout
-        = link_to "Logout", destroy_user_session_path, method: :delete
+          %li.header__in__right__category__list__menu
+            - Post.all_tags.each do |tag| 
+              .header__in__right__category__list__menu__title
+                = link_to "#{tag.name}(#{tag.taggings_count})",new_post_path,class: 'tag'

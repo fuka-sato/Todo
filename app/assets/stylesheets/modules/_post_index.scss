@@ -24,6 +24,7 @@
         }
         .post__in__list__category {
           width: 35%;
+
         }
         
         .post__in__list__menu {
@@ -36,14 +37,16 @@
         border-width:2px;
         
         td {
-          padding-top: 15px
+          padding-top: 15px;
         }
-        a {
-          text-decoration: none;
-          color: #111111;
-          font-weight: bold;
-          text-decoration:none;
+        .post__in__list__name {
+          a {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+          }
         }
+        
         a:hover {
           text-decoration:underline;
         }
