@@ -11,5 +11,9 @@
         = link_to "New post",new_post_path
       %li.header__in__right__category
         = link_to "Category","#"
+        %ul.header__in__right__category__list
+          - Post.all_tags.each do |tag| 
+            %li.header__in__right__category__list__menu
+              = link_to "#{tag.name}(#{tag.taggings_count})",new_post_path
       %li.header__in__right__logout
         = link_to "Logout", destroy_user_session_path, method: :delete
