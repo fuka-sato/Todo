@@ -8,7 +8,4 @@ class Post < ApplicationRecord
             
   validates :body,
             presence: true
-
-  validates :tag_list,
-            presence: true
 end

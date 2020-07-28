@@ -17,4 +17,5 @@
           %li.header__in__right__category__list__menu
             - Post.all_tags.each do |tag| 
               .header__in__right__category__list__menu__title
-                = link_to "#{tag.name}(#{tag.taggings_count})",new_post_path,class: 'tag'
+                = link_to "#{tag.name}(#{tag.taggings_count})",posts_path(tags_name: tag.name),class: 'tag'
+                
