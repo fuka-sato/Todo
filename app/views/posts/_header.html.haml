@@ -12,7 +12,7 @@
       %li.header__in__right__post
         = link_to "New post",new_post_path
       %li.header__in__right__category
-        = link_to "Category","#"
+        = link_to "Category","#",data: {"turbolinks" => false}
         %ul.header__in__right__category__list
           %li.header__in__right__category__list__menu
             - Post.all_tags.each do |tag| 
