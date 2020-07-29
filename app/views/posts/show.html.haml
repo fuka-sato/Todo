@@ -13,4 +13,4 @@
         .main__post__in__url
           参考URL一覧
           .main__post__in__url__box
-            = simple_format(@post.url)
+            = raw Rinku.auto_link(simple_format(@post.url),:all, 'target="_blank"')
