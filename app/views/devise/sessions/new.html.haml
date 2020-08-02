@@ -8,8 +8,8 @@
         = icon('fa', 'cat', class: 'icon')
       .login__in__left__new
         = link_to "新規会員登録" ,new_user_registration_path
-      .login__in__left__g
-        = link_to 'Googleアカウントで登録', user_google_oauth2_omniauth_authorize_path, method: :post
+      .login__in__left__g(type="id")
+        -# = link_to 'Googleアカウントで登録', user_google_oauth2_omniauth_authorize_path, method: :post
 
     .login__in__right
       %p アカウントをお持ちの方
@@ -24,5 +24,5 @@
           .login__main__in__form__btn
             = f.submit 'ログイン', class: 'btn'
           
-          .login__in__right__form__g
-            = link_to 'Googleアカウントでログイン', user_google_oauth2_omniauth_authorize_path, method: :post
+          .login__in__right__form__g(type="id")
+            -# = link_to 'Googleアカウントでログイン', user_google_oauth2_omniauth_authorize_path, method: :post

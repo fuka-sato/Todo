@@ -22,13 +22,14 @@ class User < ApplicationRecord
             length: { minimum: 7 },            
             format: { with: /\A[a-z0-9]+\z/i } 
 
+
   def self.from_omniauth(auth)
     sns = SnsCredential.where(provider: auth.provider, uid: auth.uid).first_or_create
     # sns認証したことがあればアソシエーションで取得
     # 無ければemailでユーザー検索して取得orビルド(保存はしない)
     user = sns.user || User.where(email: auth.info.email).first_or_initialize(
       nickname: auth.info.name,
-          email: auth.info.email
+      email: auth.info.email
     )
     # userが登録済みの場合はそのままログインの処理へ行くので、ここでsnsのuser_idを更新しておく
     if user.persisted?
@@ -40,5 +41,5 @@ class User < ApplicationRecord
   
 
   has_many :posts
-  has_many :sns_credentials
+  has_one :sns_credential
 end
