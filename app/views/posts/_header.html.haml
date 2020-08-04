@@ -8,6 +8,8 @@
     -# この下はあとで条件分岐する！
     - if user_signed_in?
       %ul.header__in__right
+        %li.header__in__right__mypage
+          = link_to "My page",users_path
         %li.header__in__right__logout
           = link_to "Logout", destroy_user_session_path, method: :delete
         %li.header__in__right__post
