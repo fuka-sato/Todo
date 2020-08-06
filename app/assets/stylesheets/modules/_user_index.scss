@@ -1,15 +1,18 @@
 .mypage {
-  max-width: 1100px;
   &__in {
     display: flex;
-    padding-top: 50px;
+    padding-top: 20px;
     width: 100%;
     &__left {
       margin: 0 auto;
       &__name {
-        
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        color: #B8860B;
       }
       &__edit {
+        padding-top: 10px;
         a {
           @include btn();
           border: 1px solid #6B8E23	;
@@ -26,6 +29,35 @@
     }
     &__right {
       margin: 0 auto;
+      font-size: 25px;
+      font-weight: bold;
+      padding-bottom: 25px;
+      color: #B8860B;
+      &__posts {
+        border-bottom:double;
+        border-color:#BBBBBB	;
+        border-width:2px;
+        .icon {
+          text-align: right;
+          text-decoration: none;
+          color: #777777;
+          margin-right: 10px;
+          font-size: 17px;
+        }
+        display: flex;
+        &__title {
+          padding-top: 13px;
+          font-size: 15px;
+          padding-right: 15px;
+          color: #777777;
+        }
+        &__edit {
+          padding-top: 10px;
+        }
+        &__delete {
+          padding-top: 10px;
+        }
+      }
     }
   }
 }
