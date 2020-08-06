@@ -2,13 +2,20 @@
   .header
     = render "posts/header"
   .mypage
-    .mypage_left
-      %ul
-        %li.mypage_left__edit
-          ユーザー情報の変更
-        %li.mypage_left__logout
-          ログアウトする
-    .mypage_right
-      .mypage_right__posts
-      自分の投稿一覧
-      .mypage_right__posts__list
+    .mypage__in
+      .mypage__in__left
+        .mypage__in__left__name
+          私のマイページ
+        .mypage__in__left__edit
+          = link_to "ユーザー情報の変更","#"
+        .mypage__in__left__logout
+          = link_to "ログアウトする","#"
+      .mypage__in__right
+        .mypage__in__right__posts
+          自分の投稿一覧
+          .mypage__in__right__posts__title
+            『Ruby』やったで
+          .mypag__ine__right__posts__edit
+            編集ボタン
+          .mypage__in__right__posts__delete
+            削除ボタン
