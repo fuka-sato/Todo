@@ -28,7 +28,7 @@
       }
     }
     &__right {
-      margin-right: 330px;
+      margin-right: 300px;
       font-size: 25px;
       font-weight: bold;
       padding-bottom: 25px;
@@ -37,6 +37,7 @@
         border-bottom:double;
         border-color:#BBBBBB	;
         border-width:2px;
+        padding-bottom: 10px;
         .icon {
           text-align: right;
           text-decoration: none;
@@ -44,7 +45,6 @@
           margin-right: 10px;
           font-size: 17px;
         }
-        display: flex;
         &__title {
           padding-top: 13px;
           font-size: 15px;
@@ -52,7 +52,7 @@
           color: #777777;
           a {
             text-decoration: none;
-            color: #777777;
+            color: black;
           }
           a:hover {
             text-decoration:underline;
