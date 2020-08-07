@@ -28,7 +28,7 @@
       }
     }
     &__right {
-      margin: 0 auto;
+      margin-right: 330px;
       font-size: 25px;
       font-weight: bold;
       padding-bottom: 25px;
@@ -50,7 +50,15 @@
           font-size: 15px;
           padding-right: 15px;
           color: #777777;
+          a {
+            text-decoration: none;
+            color: #777777;
+          }
+          a:hover {
+            text-decoration:underline;
+          }
         }
+        
         &__edit {
           padding-top: 10px;
         }
