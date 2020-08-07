@@ -2,6 +2,14 @@
   = render "header"
   .main
     .main__post
+      - if @post.user_id == current_user.id
+        .main__post__btn
+          .main__post__btn__edit
+            = link_to edit_post_path(@post.id) do
+              = icon('fa', 'edit', class: 'icon')
+          .main__postt__btn__delete
+            = link_to post_path(@post.id),method: :delete, data: {confirm: "削除しますか？"} do
+              = icon('fa', 'trash-alt', class: 'icon')
       .main__post__in
         %h1.main__post__in__title
           = @post.title

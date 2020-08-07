@@ -5,7 +5,8 @@
     .mypage__in
       .mypage__in__left
         .mypage__in__left__name
-          私のMypage
+          = current_user.nickname
+          のマイページ
         .mypage__in__left__edit
           = link_to "ユーザー情報の変更","#"
         .mypage__in__left__logout
@@ -15,10 +16,3 @@
         .mypage__in__right__posts
           .mypage__in__right__posts__title
             = link_to "っっっっっっっっっっっっっっっっっっっっっっっっっっっっっq","#"
-          
-          -# .mypage__in__right__posts__edit
-          -#   = link_to "#" do
-          -#     = icon('fa', 'edit', class: 'icon')
-          -# .mypage__in__right__posts__delete
-          -#   = link_to "#" do
-          -#     = icon('fa', 'trash-alt', class: 'icon')

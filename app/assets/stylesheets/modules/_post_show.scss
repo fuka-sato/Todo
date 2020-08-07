@@ -3,6 +3,16 @@
     max-width: 1100px;
     margin: 0 auto;
     color: #777777;
+    &__btn {
+      display: flex;
+      margin-left: 950px;
+      .icon {
+        text-decoration: none;
+        color: #777777;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+    }
     &__in {
       width: 100%;
       &__title {

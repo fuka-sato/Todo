@@ -13,8 +13,8 @@
             category
           %th.post__in__list__day
             date
-          %th.post__in__list__menu
-            menu
+          -# %th.post__in__list__menu
+          -#   menu
         - @posts.each do |post|
           %tr.downer
             %td.post__in__list__name
@@ -23,10 +23,10 @@
               = render 'posts/tag', tags: post.tags
             %td.post__in__list__day-time
               = post.created_at.to_s(:datetime_jp)
-            %td.post__in__list__edit
-              = link_to edit_post_path(post.id) do
-                = icon('fa', 'edit', class: 'icon')
-              = link_to post_path(post.id),method: :delete, data: {confirm: "削除しますか？"} do
-                = icon('fa', 'trash-alt', class: 'icon')
+            -# %td.post__in__list__edit
+            -#   = link_to edit_post_path(post.id) do
+            -#     = icon('fa', 'edit', class: 'icon')
+            -#   = link_to post_path(post.id),method: :delete, data: {confirm: "削除しますか？"} do
+            -#     = icon('fa', 'trash-alt', class: 'icon')
       .page
         = paginate(@posts)
