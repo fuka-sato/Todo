@@ -2,10 +2,9 @@ class PostsController < ApplicationController
   before_action :set_post,only: [:show, :destroy,:edit, :update]
 
   def index
-    @user = current_user
-    @posts = @user.posts.includes(:tags).order("updated_at DESC").page(params[:page]).per(10)
+    @posts = Post.all.includes(:tags).order("updated_at DESC").page(params[:page]).per(10)
     if params[:tag_name]
-      @posts = @user.posts.tagged_with("#{params[:tag_name]}").order("updated_at DESC").page(params[:page]).per(10)
+      @posts = Post.tagged_with("#{params[:tag_name]}").order("updated_at DESC").page(params[:page]).per(10)
     end
   end
 
