@@ -14,5 +14,8 @@
       .mypage__in__right
         投稿一覧
         .mypage__in__right__posts
+        - @posts.each do |post|
           .mypage__in__right__posts__title
-            = link_to "っっっっっっっっっっっっっっっっっっっっっっっっっっっっっq","#"
+            = link_to post.title, post_path(post.id)
+    .page
+      = paginate(@posts)

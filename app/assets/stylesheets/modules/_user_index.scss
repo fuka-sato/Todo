@@ -33,23 +33,16 @@
       font-weight: bold;
       padding-bottom: 25px;
       color: #B8860B;
-      &__posts {
-        border-bottom:double;
-        border-color:#BBBBBB	;
-        border-width:2px;
-        padding-bottom: 10px;
-        .icon {
-          text-align: right;
-          text-decoration: none;
-          color: #777777;
-          margin-right: 10px;
-          font-size: 17px;
-        }
+      &__posts {        
         &__title {
           padding-top: 13px;
           font-size: 15px;
           padding-right: 15px;
           color: #777777;
+          border-bottom:double;
+          border-color:#BBBBBB	;
+          border-width:2px;
+          padding-bottom: 10px;
           a {
             text-decoration: none;
             color: black;
