@@ -8,7 +8,7 @@
           = current_user.nickname
           のマイページ
         .mypage__in__left__edit
-          = link_to "ユーザー情報の変更","#"
+          = link_to "ユーザー情報の変更", edit_user_path(current_user)
         .mypage__in__left__logout
           = link_to "ログアウトする", destroy_user_session_path, method: :delete
       .mypage__in__right

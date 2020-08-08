@@ -1,0 +1,14 @@
+.user__edit
+  .user__edit__header
+    = render 'posts/header'
+  .user__edit__main
+    .user__edit__main__in
+      %p アカウント情報変更
+      .user__edit__main__in__form
+        = form_for(current_user) do |f|
+          .user__edit__main__in__form__nickname
+            = f.text_field :nickname, class: 'input'
+          .user__edit__main__in__form__email
+            = f.email_field :email, class: 'input'
+          .user__edit__main__in__form__submit
+            = f.submit '変更する', class: 'btn'
