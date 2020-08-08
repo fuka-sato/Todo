@@ -10,7 +10,7 @@
         .mypage__in__left__edit
           = link_to "ユーザー情報の変更","#"
         .mypage__in__left__logout
-          = link_to "ログアウトする","#"
+          = link_to "ログアウトする", destroy_user_session_path, method: :delete
       .mypage__in__right
         投稿一覧
         .mypage__in__right__posts
