@@ -5,7 +5,7 @@ class User < ApplicationRecord
         :recoverable, :rememberable, :validatable,:omniauthable, omniauth_providers: [:google_oauth2]
 
   validates_confirmation_of :password  
-  attr_accessor :password_confirmation 
+  attr_accessor :password_confirmation
   
   validates :nickname,
             presence: true,                     
@@ -16,13 +16,7 @@ class User < ApplicationRecord
             presence: true,
             uniqueness: true,
             format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i } 
-  
-  validates :password,
-            presence: true,                     
-            length: { minimum: 7 },            
-            format: { with: /\A[a-z0-9]+\z/i } 
-
-
+            
   def self.from_omniauth(auth)
     sns = SnsCredential.where(provider: auth.provider, uid: auth.uid).first_or_create
     # sns認証したことがあればアソシエーションで取得
