@@ -7,8 +7,8 @@
       .user__edit__main__in__form
         = form_for(current_user) do |f|
           .user__edit__main__in__form__nickname
-            = f.text_field :nickname, class: 'input'
+            = f.text_field :nickname, class: 'input',placeholder: "ニックネーム"
           .user__edit__main__in__form__email
-            = f.email_field :email, class: 'input'
+            = f.email_field :email, class: 'input', placeholder: "メールアドレス"
           .user__edit__main__in__form__submit
             = f.submit '変更する', class: 'btn'

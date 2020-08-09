@@ -17,5 +17,5 @@
         - @posts.each do |post|
           .mypage__in__right__posts__title
             = link_to post.title, post_path(post.id)
-    .page
-      = paginate(@posts)
+        .page
+          = paginate(@posts)
