@@ -6,7 +6,6 @@ class PostsController < ApplicationController
     if params[:tag_name]
       @posts = Post.tagged_with("#{params[:tag_name]}").order("updated_at DESC").page(params[:page]).per(10)
     end
-    @tags = ActsAsTaggableOn::Tag.most_used(10)
   end
 
   def new

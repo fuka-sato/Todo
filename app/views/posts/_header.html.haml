@@ -15,7 +15,7 @@
           = link_to "Category","#",data: {"turbolinks" => false}
           %ul.header__in__right__category__list
             %li.header__in__right__category__list__menu
-              - @tags.each do |tag| 
+              - Post.all_tags.limit(10).each do |tag| 
                 .header__in__right__category__list__menu__title
                   = link_to "#{tag.name}(#{tag.taggings_count})",posts_path(tag_name: tag.name),class: 'tag'
                   
