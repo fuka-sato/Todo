@@ -5,7 +5,7 @@
     color: #777777;
     &__btn {
       display: flex;
-      margin-left: 950px;
+      margin-left: 850px;
       .icon {
         text-decoration: none;
         color: #777777;
@@ -24,6 +24,7 @@
           border-bottom:double;
           border-color:#BBBBBB	;
           border-width:2px;
+          width: 900px;
         }
       }
       &__text {
