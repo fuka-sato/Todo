@@ -15,6 +15,16 @@
     }
     &__in {
       width: 100%;
+      &__name {
+        a {
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+        }
+        a:hover {
+          text-decoration:underline;
+        }
+      }
       &__title {
         font-weight: bold;
         font-size: 30px;
@@ -37,7 +47,6 @@
           font-size: 15px;
         }
       }
-
     }
   }
 }
