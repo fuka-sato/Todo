@@ -4,7 +4,7 @@
     padding-top: 20px;
     width: 100%;
     &__left {
-      margin: 0 auto;
+      margin-left: 200px;
       &__name {
         font-size: 25px;
         font-weight: bold;
@@ -28,7 +28,7 @@
       }
     }
     &__right {
-      margin-right: 300px;
+      margin: 0 200px;
       font-size: 25px;
       font-weight: bold;
       padding-bottom: 25px;
