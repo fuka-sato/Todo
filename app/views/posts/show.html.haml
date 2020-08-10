@@ -11,6 +11,10 @@
             = link_to post_path(@post.id),method: :delete, data: {confirm: "削除しますか？"} do
               = icon('fa', 'trash-alt', class: 'icon')
       .main__post__in
+        %p.main__post__in__name
+          投稿者
+          = link_to user_path(@post.user) do
+            = @post.user.nickname
         %h1.main__post__in__title
           = @post.title
           .after

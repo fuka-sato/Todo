@@ -1,0 +1,9 @@
+.wrapper
+  = render "posts/header"
+  .post
+  %h1
+    = @user.nickname
+    の投稿一覧
+    = render "posts/index"
+    .page
+      = paginate(@posts)
