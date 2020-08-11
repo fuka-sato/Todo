@@ -41,16 +41,13 @@ URL https://my-study-app-fs.herokuapp.com/
   パスワード: 1234567o
 
 ## デモ
-![ログイン画面](app/assets/images/スクリーンショット 2020-08-10 21.39.15.png)<br>
+![ログイン画面](https://github.com/fuka-sato/Study/blob/master/app/assets/images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-11%2021.02.32.png)<br>
 <br>
-![トップページ](app/assets/images/スクリーンショット 2020-08-10 21.39.15.png)
+![トップページ](https://github.com/fuka-sato/Study/blob/master/app/assets/images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-10%2021.39.15.png)<br>
 <br>
+![マイページ](https://github.com/fuka-sato/Study/blob/master/app/assets/images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-11%2021.06.21.png)<br>
 <br>
-![マイページ](app/assets/images/スクリーンショット 2020-08-11 21.06.21.png)
-<br>
-<br>
-![新規投稿画面](app/assets/images/スクリーンショット 2020-08-11 21.04.48.png)
-<br>
+![新規投稿画面](https://github.com/fuka-sato/Study/blob/master/app/assets/images/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-08-11%2021.04.48.png)
 <br>
 
 
